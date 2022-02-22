@@ -51,7 +51,7 @@ class ApiRateExceededException extends ApiException implements ClientException
      *
      * @return string
      */
-    public function getApiRateLimit(): string
+    public function getApiRateLimit()
     {
         return $this->limit;
     }
@@ -61,7 +61,7 @@ class ApiRateExceededException extends ApiException implements ClientException
      *
      * @return string
      */
-    public function getRetryAfter(): string
+    public function getRetryAfter()
     {
         return $this->retryAfter;
     }

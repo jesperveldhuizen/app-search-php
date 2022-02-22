@@ -64,10 +64,8 @@ class RateLimitLoggingHandler
      * Proxy the response and throw an exception if a http error is detected.
      *
      * @param array $request request
-     *
-     * @return array
      */
-    public function __invoke($request): array
+    public function __invoke($request)
     {
         $handler = $this->handler;
 
